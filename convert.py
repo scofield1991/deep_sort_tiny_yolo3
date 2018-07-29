@@ -37,8 +37,8 @@ def unique_config_sections(config_file):
     Adds unique suffixes to config sections for compability with configparser.
     """
     section_counters = defaultdict(int)
-    output_stream = io.BytesIO() #io.StringIO()
-    with open(config_file) as fin:
+    output_stream = io.StringIO() #io.BytesIO() 
+    with open(config_file, ) as fin:
         for line in fin:
             if line.startswith('['):
                 section = line.strip().strip('[]')

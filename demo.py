@@ -7,6 +7,8 @@ import os
 from timeit import time
 import warnings
 import sys
+print (sys.path)
+del sys.path[1]
 import cv2
 import numpy as np
 from PIL import Image
